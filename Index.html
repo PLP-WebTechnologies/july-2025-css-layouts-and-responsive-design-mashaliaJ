@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+    <style>
+        body {
+            font-family: "Garamond", serif;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <!-- Logo -->
+        <div class="logo">
+            <p>Favour BookShop</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <form action="search.html" method="get">
+                <input type="text" name="q" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Wishlist & Cart -->
+        <div class="user-actions">
+            <a href="wishlist.html" class="wishlist-link">Wishlist ❤️</a>
+            <a href="cart.html" class="cart-link">Cart 🛒</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="main-nav">
+            <ul class="nav-menu">
+                <li class="nav-item">Genres
+                    <ul class="submenu">
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="non-fiction.html">Non-Fiction</a></li>
+                        <li><a href="mystery.html">Mystery</a></li>
+                        <li><a href="sci-fi.html">Sci-Fi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">Formats
+                    <ul class="submenu">
+                        <li><a href="hardcover.html">Hardcover</a></li>
+                        <li><a href="paperback.html">Paperback</a></li>
+                        <li><a href="ebook.html">Ebook</a></li>
+                        <li><a href="audiobook.html">Audiobook</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">Collections
+                    <ul class="submenu">
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="bestsellers.html">Bestsellers</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <img src="https://images.pexels.com/photos/8347079/pexels-photo-8347079.jpeg" alt="Beautiful Book Display" class="hero-image" width="100%" height="400">
+        <h1 class="hero-title">Find Your Next Great Read</h1>
+        <h3 class="hero-subtitle">From page-turners to thought-provokers, we have a book for every reader.</h3>
+        <a href="bestsellers.html" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section id="product-list">
+        
+        <!-- Product 1 -->
+        <div class="product">
+            <div class="product-images">
+                <img src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg" alt="Book Cover" width="250">
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-title">The Passion Within</h1>
+                <h3 class="product-author">by Calvar Martinez</h3>
+                <p class="product-price"><strong>Price:</strong> $19.99</p>
+
+                <p><strong>Available Formats:</strong></p>
+                <form class="product-formats">
+                    <label><input type="radio" name="format" value="hardcover" checked> Hardcover</label><br>
+                    <label><input type="radio" name="format" value="paperback"> Paperback</label><br>
+                    <label><input type="radio" name="format" value="ebook"> eBook</label><br>
+                    <label><input type="radio" name="format" value="audiobook"> Audiobook</label>
+                </form>
+
+                <h3>Description</h3>
+                <p class="product-description">
+                    This edition is a collection of heartfelt poetry and short story excerpts that explore various aspects of passion:
+                    Urban life struggles, Love and loss, Religion and racial injustice, Forgiveness and healing.
+                </p>
+
+                <h3>Customer Reviews</h3>
+                <p class="product-rating">⭐⭐⭐⭐☆ (4.5/5 based on 124 reviews)</p>
+                <ul class="product-reviews">
+                    <li>"Absolutely loved it! Could not put it down." – Mary K.</li>
+                    <li>"A beautiful story with unforgettable characters." – John M.</li>
+                </ul>
+
+                <button class="add-to-cart">Add to Cart 🛒</button>
+            </div>
+        </div>
+       
+        <!-- Product 2 -->
+        <div class="product">
+            <div class="product-images">
+                <img src="https://images.pexels.com/photos/15776498/pexels-photo-15776498.jpeg" alt="Shadows of the Stars Cover" width="250">                
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-title">Hello Habits</h1>
+                <h3 class="product-author">by Michael Ray</h3>
+                <p class="product-price"><strong>Price:</strong> $14.99</p>
+
+                <p><strong>Available Formats:</strong></p>
+                <form class="product-formats">
+                    <label><input type="radio" name="format" value="hardcover" checked> Hardcover</label><br>
+                    <label><input type="radio" name="format" value="paperback"> Paperback</label><br>
+                    <label><input type="radio" name="format" value="ebook"> eBook</label><br>
+                    <label><input type="radio" name="format" value="audiobook"> Audiobook</label>
+                </form>
+
+                <h3>Description</h3>
+                <p class="product-description">
+                    In Hello, Habits, bestselling author Fumio Sasaki builds on his minimalist lifestyle philosophy and focuses on how everyday habits shape our lives.
+                   Before he embraced minimalism, Sasaki needed to turn it into a sustainable habit—and that journey forms the core of this book.
+                   It highlights how the routines we follow—from waking up, eating, to exercising—are defined by small, consistent choices
+                </p>
+
+                <h3>Customer Reviews</h3>
+                <p class="product-rating">⭐⭐⭐⭐⭐ (5/5 based on 78 reviews)</p>
+                <ul class="product-reviews">
+                    <li>"One of the best sci-fi books I've read in years!" – Alex W.</li>
+                    <li>"Couldn't stop turning the pages. Highly recommended." – Sarah P.</li>
+                </ul>
+
+                <button class="add-to-cart">Add to Cart 🛒</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <!-- Navigation Links -->
+        <section class="footer-nav">
+            <h3>Company Info</h3>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+            <h3>Customer Support</h3>
+            <ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="shipping-returns.html">Shipping & Returns</a></li>
+            </ul>
+
+            <h3>Quick Access</h3>
+            <ul>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="bestsellers.html">Bestsellers</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact and Social Media -->
+        <section class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>📍 010 Book Street, Nairobi, Kenya</p>
+            <p>🕒 Mon-Fri: 9am - 6pm</p>
+            <p>📞 +254 706 490 015</p>
+            <p>✉️ info@mybookshop.com</p>
+
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://instagram.com">Instagram</a> |
+            <a href="https://twitter.com"><strong>X</strong></a>
+        </section>
+
+        <!-- Legal & Branding -->
+        <section class="footer-legal">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+
+            <h3>Newsletter Sign-Up</h3>
+            <form action="subscribe.html" method="post" class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <p>&copy; Favour Bookshop 2025. All rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>
